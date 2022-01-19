@@ -8,6 +8,7 @@ import Episodes from "./pages/Episodes/Episodes";
 import Locations from "./pages/Locations/Locations";
 import Footer from "./components/Footer/Footer";
 import Navbar from "./components/Navbar/Navbar";
+import NotFound from "./pages/NotFound/NotFound";
 
 function App() {
   const { pathname } = useLocation();
@@ -22,6 +23,7 @@ function App() {
         <Route path="/characters/:id" element={<Character />} />
         <Route path="/episodes" element={<Episodes />} />
         <Route path="/locations" element={<Locations />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
 
       <Footer />

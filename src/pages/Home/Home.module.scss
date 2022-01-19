@@ -11,6 +11,9 @@
 }
 
 .logo {
+    animation: fadeIn 2s 1s ease-in-out forwards 1;
+    transform: translateY(100%);
+    opacity: 0;
     margin: 2rem auto 1rem;
     max-width: 40rem;
     width: 90%;
@@ -32,6 +35,9 @@
     }
 
     &Link {
+        animation: fadeIn 2s 2.5s ease-in-out forwards 1;
+        transform: translateY(-10%);
+        opacity: 0;
         border: 2px solid $cyan;
         border-radius: 5px;
         background-repeat: no-repeat;

@@ -1,0 +1,7 @@
+@import "../../scss/keyframes.scss";
+
+.container{
+    animation: fadeIn 2s .5s ease-in-out forwards 1;
+    transform: translateY(100%);
+    opacity: 0;
+}

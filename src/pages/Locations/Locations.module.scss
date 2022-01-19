@@ -1,9 +1,13 @@
 @import "../../scss/main.scss";
 
+.content{
+    animation: fadeIn 1.5s 1.25s ease-in-out forwards 1;
+    transform: translateY(5%);
+    opacity: 0;
+}
 .location {
-    border-bottom: 1px solid $cyan;
     margin: 3rem auto;
-    padding: 3rem 0 4rem;
+    padding: 5rem 0;
 
     &Header {
         span {

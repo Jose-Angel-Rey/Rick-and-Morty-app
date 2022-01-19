@@ -1,0 +1,93 @@
+@import "../../scss/main.scss";
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.character {
+
+    display: flex;
+    margin: 8rem auto 5rem;
+    max-width: 25rem;
+    width: 90%;
+    flex-direction: column;
+
+    @media screen and (min-width: $medium-screen) {
+        flex-direction: row;
+        max-width: 50rem;
+    }
+}
+
+.image {
+    animation: fadeIn 1s 1s ease-in-out forwards 1;
+    transform: translateX(-5%);
+    opacity: 0;
+    border: 3px solid $primary-color;
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+
+    @media screen and (min-width: $medium-screen) {
+        max-width: 30rem;
+    }
+}
+
+.content {
+    animation: fadeIn 1s 1s ease-in-out forwards 1;
+    transform: translateX(5%);
+    opacity: 0;
+    background-color: #fff;
+    border: 3px solid $primary-color;
+    color: $primary-color;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 1rem 0 3rem;
+
+    @media (min-width: $medium-screen) {
+        max-width: 20rem;
+    }
+}
+
+.header {
+    padding: 1rem .5rem;
+
+    span {
+        font-size: 1rem;
+        color: #7a7a7a;
+    }
+}
+
+.details {
+    list-style-type: none;
+    font-size: 1.3rem;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+    li {
+        display: flex;
+        justify-content: center;
+        margin: .5rem;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    svg {
+        color: #7a7a7a;
+        display: inline-block;
+        margin-right: .5rem;
+    }
+
+    span {
+        display: block;
+        width: 100%;
+    }
+
+}

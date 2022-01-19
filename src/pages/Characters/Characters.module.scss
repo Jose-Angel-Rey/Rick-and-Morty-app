@@ -1,4 +1,8 @@
+@import "../../scss/main.scss";
 .content{
+    animation: fadeIn 1s 1.25s ease-in-out forwards 1;
+    transform: translateY(5%);
+    opacity: 0;
     display: flex;
     flex-wrap: wrap;
     gap: 2rem;

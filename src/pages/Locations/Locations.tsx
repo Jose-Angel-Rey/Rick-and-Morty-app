@@ -1,5 +1,4 @@
 import styles from "./Locations.module.scss";
-import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { useLocations } from "../../graphql/customHooks";
 import Pagination from "../../components/Pagination/Pagination";
@@ -17,7 +16,7 @@ export default function Locations() {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, [page]);
-  console.log("data", data);
+
   return (
     <>
       <Header
@@ -57,23 +56,3 @@ export default function Locations() {
     </>
   );
 }
-
-// locations(page: $page) {
-//   info {
-//     pages
-//     count
-//     next
-//     prev
-//   }
-
-//   results {
-//     name
-//     id
-//     type
-//     residents {
-//       image
-//       name
-//       id
-//     }
-//   }
-// }

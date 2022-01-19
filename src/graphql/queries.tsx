@@ -34,6 +34,13 @@ export const CHARACTER_DETAIL = gql`
       status
       species
       type
+      gender
+      origin {
+        name
+      }
+      location {
+        name
+      }
     }
   }
 `;
