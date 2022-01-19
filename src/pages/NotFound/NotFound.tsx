@@ -6,7 +6,6 @@ export default function NotFound() {
   const navigate = useNavigate();
 
   useEffect(() => {
-    document.title = "Not Found";
     setTimeout(() => {
       navigate("/");
     }, 3000);
@@ -15,7 +14,6 @@ export default function NotFound() {
   return (
     <main>
       <Error />
-      <span>try again later</span>
     </main>
   );
 }
