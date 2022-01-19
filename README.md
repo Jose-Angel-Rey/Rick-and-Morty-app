@@ -1,46 +1,49 @@
-# Getting Started with Create React App
+![Banner](https://ik.imagekit.io/8k98kll7xyh/Portfolio/Frameworks/Rick-and-Morty/banner_uiWPQ7G_E.png?ik-sdk-version=javascript-1.4.3&updatedAt=1642624940885)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<div align="center">
+  <h1>Rick and Morty app</h1>
+  
+  [![Rick and Morty app](https://img.shields.io/badge/Go_to_Rick_and_Morty_app-404040?style=for-the-badge&logo=ko-fi&logoColor=white)](https://special-rick-and-morty.vercel.app/)
+  
+</div>  
 
-## Available Scripts
+<!--   [Go to GIPHO](https://github.com/matiassingers/awesome-readme) -->
+<!-- ![Banner](https://ik.imagekit.io/8k98kll7xyh/Portfolio/Frameworks/GIPHO/GIPHO_W2T5iRl79.webp?updatedAt=1641507603478) -->
 
-In the project directory, you can run:
+  <p>
+   The general idea of this project is to create a SPA (Single Page Application) that will show information from a third party api related to the series Rick and Morty, through this api you can get information about the characters of the series, details of the characters, episodes of the series and locations present in the series.
+</p>
+    <p>
+This API is implemented through GraphQL so I had to use Apollo Client from the Frontend to consume the information, I had never worked with this type of API's before so it was an opportunity to learn a new technology and way of working with API's quite nice.
+</p>
+      <p>
+The application was developed following a Mobile First methodology and used SASS, Typescript and React as frontend technologies.
+</p>
 
-### `npm start`
+## Tech Stack
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- Typescript 
+- SASS
+- React
+- GraphQL
+- Apollo Client
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Screenshots
 
-### `npm test`
+<!-- <img src="https://ik.imagekit.io/8k98kll7xyh/Portfolio/Frameworks/GIPHO/Logo_XfKTAXcUZr.svg?updatedAt=1641507602964" alt="Logo" width="150" /> -->
+<div align="center">
+<img src="https://ik.imagekit.io/8k98kll7xyh/Portfolio/Frameworks/Rick-and-Morty/special-rick-and-morty.vercel.app_characters__1__SbylIHDaT.png?ik-sdk-version=javascript-1.4.3&updatedAt=1642624996036" width="70%">
+<br/>
+<br/>  
+<img src="https://ik.imagekit.io/8k98kll7xyh/Portfolio/Frameworks/Rick-and-Morty/special-rick-and-morty.vercel.app_locations__2__xujuHTdN-NH.png?ik-sdk-version=javascript-1.4.3&updatedAt=1642625643620" width="70%">
+<br/>
+<br/>
+<img src="https://ik.imagekit.io/8k98kll7xyh/Portfolio/Frameworks/Rick-and-Morty/special-rick-and-morty.vercel.app_locations__3__TkI4lfDkP.png?ik-sdk-version=javascript-1.4.3&updatedAt=1642625620568" width="70%">
+<br/>
+<br/>
+<img src="https://ik.imagekit.io/8k98kll7xyh/Portfolio/Frameworks/Rick-and-Morty/special-rick-and-morty.vercel.app_locations__1__k1-4iPfwF.png?ik-sdk-version=javascript-1.4.3&updatedAt=1642625631446" width="70%">
+<br/>
+<br/>
+<img src="https://ik.imagekit.io/8k98kll7xyh/Portfolio/Frameworks/Rick-and-Morty/special-rick-and-morty.vercel.app_locations_St0nvghBh.png?ik-sdk-version=javascript-1.4.3&updatedAt=1642625634200" width="70%">
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+</div>
