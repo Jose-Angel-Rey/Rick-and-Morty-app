@@ -44,7 +44,7 @@ export default function CharacterCard({
         </p>
         <p className={styles.contentOrigin}>
           Origin:
-          <Link to={`/locations/${origin.id}`}>{origin.name}</Link>
+           <span>{origin.name}</span>
         </p>
         <Link to={`/characters/${id}`} className={styles.contentButton}>
           <AiOutlineInfoCircle /> See more
