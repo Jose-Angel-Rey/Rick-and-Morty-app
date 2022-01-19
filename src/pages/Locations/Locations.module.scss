@@ -1,0 +1,18 @@
+@import "../../scss/main.scss";
+
+.location {
+    border-bottom: 1px solid $cyan;
+    margin: 3rem auto;
+    padding: 3rem 0 4rem;
+
+    &Header {
+        span {
+            font-size: 1rem;
+            color: #ddd;
+            display: block;
+        }
+        h2{
+            margin-bottom: 2rem;
+        }
+    }
+}

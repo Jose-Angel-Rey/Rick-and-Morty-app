@@ -1,0 +1,34 @@
+@import "../../scss/main.scss";
+
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 2rem;
+    margin: 2rem auto 3rem;
+    max-width: 80rem;
+    width: 100%;
+}
+
+.episode {
+    background-color: #fff;
+    color: $primary-color;
+    border-radius: 5px;
+    border: 1px solid $green;
+    max-width: 22rem;
+    padding: 1.5rem .5rem;
+    width: 90%;
+
+    svg {
+        font-size: 5rem;
+    }
+}
+
+.content {
+    font-size: 1.2rem;
+    width: 100%;
+
+    &Name {
+        margin-bottom: .5rem;
+    }
+}

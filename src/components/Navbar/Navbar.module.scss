@@ -1,0 +1,50 @@
+@import "../../scss/main.scss";
+
+.container {
+    background-color: $primary-color;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.nav {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    list-style-type: none;
+    border-bottom: 1px solid $green;
+    padding: 1rem 0 1rem 2.5rem;
+
+    
+    &Logo {
+        width: 4rem;
+    }
+    
+    &Item {
+        font-size: 1.1rem;
+        margin: 0 1rem;
+    }
+    
+    &Link {
+        color: #fff;
+        text-decoration: none;
+        transition: all .5s;
+        
+        &[aria-current="page"] {
+            color: $green;
+        }
+    }
+    @media screen and (max-width: 500px) {
+        padding: 1rem .5rem;
+    
+        &Logo{
+            width: 2rem;
+        }
+        &Item {
+            font-size: 1rem;
+            margin: 0 .4rem;
+        }
+    }
+}

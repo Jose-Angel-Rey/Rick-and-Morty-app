@@ -3,7 +3,6 @@ import { useCharacter } from "../../graphql/customHooks";
 
 export default function Character() {
   const { id } = useParams() as { id: string };
-
   const { loading, error, data } = useCharacter(id);
 
   console.log("data", data);

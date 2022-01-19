@@ -58,22 +58,6 @@ export const EPISODES = gql`
     }
   }
 `;
-export const EPISODE_DETAIL = gql`
-  query episode($id: ID!) {
-    episode(id: $id) {
-      id
-      name
-      air_date
-      episode
-      characters {
-        id
-        name
-        image
-      }
-    }
-  }
-`;
-
 // ---------------------------------------
 
 export const LOCATIONS = gql`
@@ -91,26 +75,17 @@ export const LOCATIONS = gql`
         id
         type
         residents {
-          image
-          name
           id
+          name
+          image
+          status
+          species
+          gender
+          origin {
+            id
+            name
+          }
         }
-      }
-    }
-  }
-`;
-
-export const LOCATION_DETAIL = gql`
-  query location($id: ID!) {
-    location(id: $id) {
-      id
-      name
-      type
-      dimension
-      residents {
-        id
-        name
-        image
       }
     }
   }

@@ -1,3 +1,5 @@
+import styles from "./Pagination.module.scss";
+import { GrLinkNext, GrLinkPrevious } from "react-icons/gr";
 type PaginationProps = {
   page: number;
   setPage: (page: number) => void;
@@ -12,15 +14,15 @@ export default function Pagination({
   hasPreviousPage,
 }: PaginationProps) {
   return (
-    <section>
+    <section className={styles.container}>
       {hasPreviousPage && (
         <button type="button" onClick={() => setPage(page - 1)}>
-          Prev
+          <GrLinkPrevious /> Prev
         </button>
       )}
       {hasNextPage && (
         <button type="button" onClick={() => setPage(page + 1)}>
-          Next
+          Next  <GrLinkNext />
         </button>
       )}
     </section>

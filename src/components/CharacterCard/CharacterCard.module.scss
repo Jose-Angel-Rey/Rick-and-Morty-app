@@ -1,0 +1,137 @@
+@import "../../scss/main.scss";
+
+.container {
+    max-width: 20rem !important;
+    height: 30rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.image {
+    height: 60%;
+    object-fit: cover;
+    object-position: center;
+    width: 100% !important;
+}
+
+.content {
+    background-color: #fff;
+    height: 40%;
+    color: $primary-color;
+    font-size: 1.5rem;
+    width: 100%;
+
+    &Name {
+        font-size: 1.4rem;
+        font-weight: bold;
+        margin-bottom: 1rem;
+    }
+
+    &Specie {
+        font-size: .8rem;
+    }
+
+    &Status {
+        font-size: 1rem;
+        text-align: left;
+        margin-left: 1rem;
+        margin-bottom: .5rem;
+        font-weight: $bold-font-weight;
+        width: 100%;
+
+        &.alive {
+            span {
+
+                &::after {
+                    border: 1px solid #065e06;
+                    background-color: #008000;
+                }
+            }
+        }
+
+        &.dead {
+            span {
+
+                &::after {
+                    border: 1px solid #be0b0b;
+                    background-color: #ff0000;
+                }
+            }
+        }
+
+        &.unknown {
+            span {
+
+                &::after {
+                    border: 1px solid #be9e0c;
+                    background-color: #f5ca09;
+                }
+            }
+        }
+
+        span {
+            font-weight: $medium-font-weight;
+            margin-left: .5rem;
+            position: relative;
+
+            &::after {
+                content: "";
+                position: absolute;
+                border-radius: 50%;
+                top: 25%;
+                right: -1.2rem;
+                width: .6rem;
+                height: .6rem;
+                background-color: transparent;
+                z-index: 100;
+            }
+        }
+
+    }
+
+    &Origin {
+        @extend .contentStatus;
+
+        a {
+            color: $cyan;
+            display: inline-block;
+            margin-left: .5rem;
+            font-weight: $medium-font-weight;
+            text-decoration: none;
+        }
+    }
+
+    &Button {
+        background-color: #ddd;
+        margin-top: auto;
+        width: 100%;
+        font-size: 1.2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: .5rem;
+        font-weight: $bold-font-weight;
+        color: $primary-color;
+        text-decoration: none;
+        padding: .5rem;
+        transition: all .2s ease-in-out;
+
+        &:hover {
+            background-color: #808080;
+            color: #fff;
+        }
+
+        &:active {
+            background-color: #494949;
+            color: #fff;
+        }
+    }
+}
+
+.male {
+    border: 2px solid rgba(47, 255, 82, 0.568);
+}
+
+.female {
+    border: 2px solid rgba(255, 0, 255, 0.555);
+}

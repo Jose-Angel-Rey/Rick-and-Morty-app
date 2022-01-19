@@ -1,0 +1,35 @@
+@import "../../scss/main.scss";
+
+.container {
+    margin: 2rem auto 4rem;
+    display: flex;
+    justify-content: center;
+
+    button {
+        color: $green;
+        cursor: pointer;
+        background: transparent;
+        padding: 1rem 2rem;
+        border: none;
+        font-size: 1.5rem;
+        display: flex;
+        outline: none;
+        margin: 0 1rem;
+        gap: .5rem;
+        transition: all .5s;
+        align-items: center;
+        justify-content: center;
+
+        &:hover {
+            transform: scale(1.05);
+        }
+
+        &:active {
+            transform: scale(1);
+        }
+    }
+
+    path {
+        stroke: $green !important;
+    }
+}
