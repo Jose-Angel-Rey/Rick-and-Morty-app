@@ -8,7 +8,7 @@ import "./index.css";
 import { ApolloClient, InMemoryCache, ApolloProvider } from "@apollo/client";
 const client = new ApolloClient({
   connectToDevTools: true,
-  uri: "https://rickandmortyapi.com/graphql",
+  uri: REACT_APP_GRAPHQL_ENDPOINT,
   cache: new InMemoryCache(),
 });
 
