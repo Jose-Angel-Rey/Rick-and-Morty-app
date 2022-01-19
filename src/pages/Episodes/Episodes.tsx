@@ -1,8 +1,11 @@
+import { useState } from "react";
 import { Link } from "react-router-dom";
+import Pagination from "../../components/Pagination/Pagination";
 import { useEpisodes } from "../../graphql/customHooks";
 
 export default function Episodes() {
-  const { loading, error, data } = useEpisodes();
+  const [page, setPage] = useState(1);
+  const { loading, error, data } = useEpisodes(page);
 
   return (
     <div>
@@ -16,11 +19,17 @@ export default function Episodes() {
             <p>{episode.episode}</p>
             <p>{episode.air_date}</p>
             <Link to={`/episodes/${episode.id}`}>
-                <button>Details</button>
+              <button>Details</button>
             </Link>
             <hr />
           </div>
         ))}
+      <Pagination
+        page={page}
+        setPage={setPage}
+        hasNextPage={typeof data?.episodes?.info?.next === "number"}
+        hasPreviousPage={typeof data?.episodes?.info?.prev === "number"}
+      />
     </div>
   );
 }
