@@ -1,3 +1,90 @@
-.container{
-    border: 1px solid red;
+@import "../../scss/main.scss";
+
+.container {
+    background-image: url("../../assets/images/home.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    padding: 2rem 0 4rem;
+    width: 100%;
+}
+
+.logo {
+    margin: 2rem auto 1rem;
+    max-width: 40rem;
+    width: 90%;
+}
+
+.nav {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: space-evenly;
+    margin: 1rem auto;
+    max-width: 90rem;
+    padding: 1.5rem .5rem;
+    width: 100%;
+
+    @media screen and (min-width: $large-screen) {
+        gap: 1rem;
+    }
+
+    &Link {
+        border: 2px solid $cyan;
+        border-radius: 5px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        color: #fff;
+        max-width: 20rem;
+        padding: 3rem 0;
+        text-decoration: none;
+        position: relative;
+        transition: all .5s;
+        width: 100%;
+
+        font: {
+            weight: $bold-font-weight;
+            size: 1.3rem;
+        }
+
+        &::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+
+        &:hover {
+            transform: scale(1.05);
+            border-color: $cyan-light;
+        }
+
+        &:active {
+            transform: scale(1);
+            border-color: #fff;
+        }
+
+        &:first-of-type {
+            background-image: url("../../assets/gifs/characters.gif");
+        }
+
+        &:nth-child(even) {
+            background-image: url("../../assets/gifs/episodes.gif");
+        }
+
+        &:last-of-type {
+            background-image: url("../../assets/gifs/locations.gif");
+        }
+
+        span {
+            position: relative;
+            z-index: 5;
+        }
+    }
 }
