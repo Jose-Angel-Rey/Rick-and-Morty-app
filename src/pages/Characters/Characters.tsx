@@ -1,11 +1,12 @@
 import { Link } from "react-router-dom";
+import { useState } from "react";
 import { useCharacters } from "../../graphql/customHooks";
+import Pagination from "../../components/Pagination/Pagination";
 
 export default function Characters() {
-  const { loading, error, data } = useCharacters();
-
-  console.log(data);
-
+  const [page, setPage] = useState(1);
+  const { loading, error, data } = useCharacters(page);
+  
   return (
     <main>
       {loading && <p>Loading...</p>}
@@ -21,6 +22,13 @@ export default function Characters() {
             <hr />
           </div>
         ))}
+
+      <Pagination
+        page={page}
+        setPage={setPage}
+        hasNextPage={typeof data?.characters?.info?.next === "number"}
+        hasPreviousPage={typeof data?.characters?.info?.prev === "number"}
+      />
     </main>
   );
 }
